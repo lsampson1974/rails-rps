@@ -6,10 +6,10 @@
      They played <%= @computer_choice %>!
 </h2>
 
-<% if @computer_choice == "rock" %>
+<% if @computer_choice.upcase == "ROCK" %>
   <h2>We won!</h2>
 
-<% elsif @computer_choice == "paper" %>
+<% elsif @computer_choice.upcase == "PAPER" %>
   <h2>We tied!</h2>
 
 <% else %>
